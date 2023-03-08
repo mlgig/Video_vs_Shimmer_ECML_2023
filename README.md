@@ -48,42 +48,20 @@ downloaded from the Google Drive [link](https://drive.google.com/drive/folders/1
 Please [email](mailto:ashish.singh@ucdconnect.ie) if you need access to the original videos.
 
 ## Comparison of IMUs, Video and Ensemble based approach
-Data Source | Acc MP | Acc Rowing |
---------------- |--------|------------|
-Placement of IMUs |        | |
-3 IMUs (Wrists and Back)  | 0.91   | 0.80       |
-1 IMU (RightWrist)    | 0.83   |  0.68      |
-Video |        | | 
-25 body parts         | 0.82   | 0.79|
-8 body parts  | 0.88   | 0.83 |
-Ensemble: video and IMUs  |        | |
-Video (8 body parts) + 3 IMUs              | 0.93   | 0.88   |
-Video (8 body parts) + 1 IMU RightWrist | 0.93   | 0.85 |
+| Data Source                             | Acc MP | Acc Rowing |
+|-----------------------------------------|--------|------------|
+| Placement of IMUs                       |        |            |
+| 3 IMUs (Wrists and Back)                | 0.91   | 0.80       |
+| 1 IMU (RightWrist)                      | 0.83   | 0.68       |
+| Video                                   |        |            | 
+| 25 body parts                           | 0.82   | 0.79       |
+| 8 body parts                            | 0.88   | 0.83       |
+| Ensemble: video and IMUs                |        |            |
+| Video (8 body parts) + 3 IMUs           | 0.93   | 0.88       |
+| Video (8 body parts) + 1 IMU RightWrist | 0.93   | 0.85       |
 
 <em>Table 3: Comparison of accuracy obtained using IMUs and video for MP and Rowing. </em>
 
 Table 3 presents the results for IMU and Video for both MP and Rowing exercises. We observe that a minimum of 3 IMUs 
 are required to achieve a higher accuracy than a single video. A single video outperforms the accuracy of using a single
 IMU for both exercises.
-
-## Citation
-Please cite this paper if it helped in your research:
-```
-@article{singh2021interpretable,
-  title={Interpretable Classification of Human Exercise Videos through Pose Estimation and Multivariate Time Series Analysis},
-  author={Singh, Ashish and Le, Binh Thanh and Le Nguyen, Thach and Whelan, Darragh and O’Reilly, Martin and Caulfield, Brian and Ifrim, Georgiana},
-  year={2021},
-  booktitle = {5th International Workshop on Health Intelligence(W3PHIAI-21) at AAAI21},
-  publisher={Springer}
-}
-
-
-@article{singh2022fast,
-  title={Fast and robust video-based exercise classification via body pose tracking and scalable multivariate time series classifiers},
-  author={Singh, Ashish and Bevilacqua, Antonio and Nguyen, Thach Le and Hu, Feiyan and McGuinness, Kevin and O’Reilly, Martin and Whelan, Darragh and Caulfield, Brian and Ifrim, Georgiana},
-  journal={Data Mining and Knowledge Discovery},
-  pages={1--40},
-  year={2022},
-  publisher={Springer}
-}
-```
