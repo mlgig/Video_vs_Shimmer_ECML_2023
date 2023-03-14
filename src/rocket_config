@@ -1,0 +1,4 @@
+INPUT_DATA_PATH = /home/ashish/PycharmProjects/ECML_2023/data/TSC/IMU
+EXERCISE = MP
+OUTPUT_PATH =  /tmp
+DATA_TYPE = default
