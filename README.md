@@ -32,7 +32,7 @@ For tabular features, also train/test has already been created in the ratio of 7
 contain the pid file which basically maps each sample in the train/test to a unique participant id with a particular
 exercise type and repetition number. This information can be used to create further splits. If some folders does
 not contain this file it can be copied from other folder as the order of the features remain same. The data can be 
-downloaded from the Dropbox [link](https://www.dropbox.com/sh/a2knoa6ro2l41sh/AAA9M2ZahkyQ9ASymUYgoKiza?dl=0). 
+downloaded from the Google Drive [link](https://drive.google.com/drive/folders/1IoX5-GoO9w6PP1juUKnsrl6Ymn-BjiEY?usp=sharing). 
 
 Please [email](mailto:ashish.singh@ucdconnect.ie) if you need access to the original videos.
 
