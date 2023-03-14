@@ -1,22 +1,11 @@
 # An Examination of Wearable Sensors versus Video Data Capture for Human Exercise Classification
 
-Wearable sensors such as Inertial Measurement Units (IMUs) are often used to assess the performance of human 
-exercise. Common approaches use handcrafted features based on domain expertise or automatically extracted features 
-using libraries dedicated to time series analysis. Some recent techniques can also use directly the raw motion 
-data. Usually, multiple sensors are required to achieve high classification accuracy, which is not very practical. 
-Recent work utilizing the latest advances in computer vision applied to video has shown similar performance without
-the need for manual feature engineering, while avoiding some pitfalls, such as sensor calibration and placement on 
-the body, which may hinder the movement. In this paper, we compare the performance of wearable sensors using IMUs and 
-video-based approaches for human exercise classification, on two real-world datasets consisting of Military Press and 
-Rowing exercises. We compare the performance using a single camera that captures video in the frontal view versus using
-the data captured by 5 IMUs placed on different parts of the body. We observe that a method based on a single camera can 
-outperform a single IMU by 10 percentage points on average. Additionally, a minimum of 3 IMUs are required to outperform 
-the single camera. We observe that working with the raw data using multivariate time series classifiers 
-outperforms traditional approaches based on handcrafted or automatically extracted features. Finally, we show 
-that an ensemble model combining the data from a single camera with a single IMU significantly outperforms either 
-data modality. Our research opens up new and more realistic avenues for this application, where a  video using 
-readily available smartphones combined with a single sensor can be used to more effectively classify human 
-exercise execution.
+Wearable sensors such as Inertial Measurement Units (IMUs) are often used to assess the performance of human exercise. Common approaches use handcrafted features based on domain expertise or automatically extracted features using tools for time series analysis. 
+% Some recent techniques can also use directly the raw data. 
+Usually, multiple sensors are required to achieve high classification accuracy, which is not very practical. Further, multiple sensors-based approaches require calibration and synchronization and may lead to discomfort over longer time periods.
+Recent work utilizing computer vision techniques has shown similar performance using video, without the need for manual feature engineering, while avoiding some pitfalls such as sensor calibration and placement on the body.
+In this paper, we compare the performance of IMUs to a video-based approach for human exercise classification on two real-world datasets consisting of Military Press and Rowing exercises both of which involve upper limb movements. We compare the performance using a single camera that captures video in the frontal view versus using 5 IMUs placed on different parts of the body. 
+We observe that an approach based on a single camera can outperform a single IMU by 10 percentage points on average. Additionally, a minimum of 3 IMUs are required to outperform a single camera. We observe that working with the raw data using multivariate time series classifiers outperforms traditional approaches based on handcrafted or automatically extracted features. Finally, we show that an ensemble model combining the data from a single camera with a single IMU significantly outperforms either data modality. Our research opens up new and more realistic avenues for this application, where a  video captured using a readily available smartphone camera combined with a single sensor can be used for effective human exercise classification. 
 
 ![Alt text](figs/overview.png?raw=true)
 
@@ -31,7 +20,7 @@ different ways to classify IMU and video data:
 - Time series way
 - Automated feature extraction
 
-Raw data from IMUs can be treated as multivariate time series with multiple diemsions. Similarly, for video we 
+Raw data from IMUs can be treated as multivariate time series with multiple dimensions. Similarly, for video we 
 obtain multivariate time series by repeatedly applying OpenPose as human pose estimation library to track 25 body
 parts of a human body over all the frames.
 The TSC folder contains the data in time series for both IMUs and videos.  The data shared in this repository in 
