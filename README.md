@@ -34,8 +34,6 @@ exercise type and repetition number. This information can be used to create furt
 not contain this file it can be copied from other folder as the order of the features remain same. The data can be 
 downloaded from the Google Drive [link](https://drive.google.com/drive/folders/1IoX5-GoO9w6PP1juUKnsrl6Ymn-BjiEY?usp=sharing). 
 
-Please [email](mailto:ashish.singh@ucdconnect.ie) if you need access to the original videos.
-
 ## Comparison of IMUs, Video and Ensemble based approach
 | Data Source                             | Acc MP | Acc Rowing |
 |-----------------------------------------|--------|------------|
