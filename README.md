@@ -1,17 +1,38 @@
 # An Examination of Wearable Sensors versus Video Data Capture for Human Exercise Classification
 
-Wearable sensors such as Inertial Measurement Units (IMUs) are often used to assess the performance of human exercise. Common approaches use handcrafted features based on domain expertise or automatically extracted features using tools for time series analysis. 
-% Some recent techniques can also use directly the raw data. 
-Usually, multiple sensors are required to achieve high classification accuracy, which is not very practical. Further, multiple sensors-based approaches require calibration and synchronization and may lead to discomfort over longer time periods.
-Recent work utilizing computer vision techniques has shown similar performance using video, without the need for manual feature engineering, while avoiding some pitfalls such as sensor calibration and placement on the body.
-In this paper, we compare the performance of IMUs to a video-based approach for human exercise classification on two real-world datasets consisting of Military Press and Rowing exercises both of which involve upper limb movements. We compare the performance using a single camera that captures video in the frontal view versus using 5 IMUs placed on different parts of the body. 
-We observe that an approach based on a single camera can outperform a single IMU by 10 percentage points on average. Additionally, a minimum of 3 IMUs are required to outperform a single camera. We observe that working with the raw data using multivariate time series classifiers outperforms traditional approaches based on handcrafted or automatically extracted features. Finally, we show that an ensemble model combining the data from a single camera with a single IMU significantly outperforms either data modality. Our research opens up new and more realistic avenues for this application, where a  video captured using a readily available smartphone camera combined with a single sensor can be used for effective human exercise classification. 
+Wearable sensors such as Inertial Measurement Units (IMUs)
+are often used to assess the performance of human exercise. Common
+approaches use handcrafted features based on domain expertise or auto-
+matically extracted features using tools for time series analysis. Multiple
+sensors are required to achieve high classification accuracy, which is not
+very practical. These sensors require calibration and synchronization and
+may lead to discomfort over longer time periods. Recent work utilizing
+computer vision techniques has shown similar performance using video,
+without the need for manual feature engineering, and avoiding some pit-
+falls such as sensor calibration and placement on the body. In this pa-
+per, we compare the performance of IMUs to a video-based approach
+for human exercise classification on two real-world datasets consisting
+of Military Press and Rowing exercises. We compare the performance
+using a single camera that captures video in the frontal view versus us-
+ing 5 IMUs placed on different parts of the body. We observe that an
+approach based on a single camera can outperform a single IMU by 10
+percentage points on average. Additionally, a minimum of 3 IMUs are re-
+quired to outperform a single camera. We observe that working with the
+raw data using multivariate time series classifiers outperforms traditional
+approaches based on handcrafted or automatically extracted features. Fi-
+nally, we show that an ensemble model combining the data from a single
+camera with a single IMU outperforms either data modality. Our work
+opens up new and more realistic avenues for this application, where a
+video captured using a readily available smartphone camera, combined
+with a single sensor, can be used for effective human exercise classifica-
+tion.
 
-![Alt text](figs/overview.png?raw=true)
-
-<em>**Fig 1** Comparison of video (top) and sensors (bottom) to classify human exercise movement. The upper box presents
-the process of obtaining multivariate data (only 3 out of 25 body parts shown) from video. The bottom box shows the raw 
-Y signals from IMUs placed on the participant's body (only 3 signals shown here).</em>
+[//]: # (![Alt text]&#40;figs/overview.png?raw=true&#41;)
+![img.png](img.png)
+<em>**Fig 1** Comparison of video (top) and sensors (bottom) to classify human exercise
+movement. The upper box presents the process of obtaining multivariate data from
+video (only 3 out of 25 body parts shown). The bottom box shows the raw Y-signals
+from a single IMU placed on the participant’s body (only 3 signals shown here).</em>
 
 ## Data Description
 The data used is the video recordings and IMU data of the execution of the Military Press (MP) and Rowing exercise.
